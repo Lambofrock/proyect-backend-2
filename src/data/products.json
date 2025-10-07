@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "title": "Teclado Mecánico RGB",
+    "description": "Teclado mecánico con retroiluminación RGB personalizable y switches azules.",
+    "code": "TEC001",
+    "price": 49990,
+    "status": true,
+    "stock": 25,
+    "category": "Periféricos",
+    "thumbnails": [
+      "/images/teclado1.png",
+      "/images/teclado1b.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mouse Gamer Inalámbrico",
+    "description": "Mouse inalámbrico con sensor de alta precisión y batería recargable.",
+    "code": "MOU123",
+    "price": 29990,
+    "status": true,
+    "stock": 40,
+    "category": "Periféricos",
+    "thumbnails": [
+      "/images/mouse1.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Monitor 27'' 2K",
+    "description": "Monitor de 27 pulgadas con resolución 2K y tecnología IPS.",
+    "code": "MON270",
+    "price": 199990,
+    "status": true,
+    "stock": 15,
+    "category": "Monitores",
+    "thumbnails": [
+      "/images/monitor1.png",
+      "/images/monitor1b.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Silla Ergonómica",
+    "description": "Silla ergonómica para oficina con soporte lumbar ajustable.",
+    "code": "SIL456",
+    "price": 89990,
+    "status": true,
+    "stock": 10,
+    "category": "Muebles",
+    "thumbnails": [
+      "/images/silla1.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Auriculares Inalámbricos",
+    "description": "Auriculares Bluetooth con cancelación de ruido y micrófono integrado.",
+    "code": "AUD789",
+    "price": 59990,
+    "status": false,
+    "stock": 0,
+    "category": "Audio",
+    "thumbnails": [
+      "/images/audifonos1.png",
+      "/images/audifonos1b.png"
+    ]
+  }
+]

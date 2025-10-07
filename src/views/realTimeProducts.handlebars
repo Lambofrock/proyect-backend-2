@@ -1,0 +1,25 @@
+<Div> </Div>
+<br>
+<hr>
+<div>
+    <h2>listado de productos en tiempo real</h2>
+    <ul>
+  {{#each products}}
+    <li>
+      <h2> {{this.titulo}} </h2>
+      <h3> precio: ${{this.precio}} </h3>
+    </li>
+  {{/each}}
+    </ul>
+<script src="/socket.io/socket.io.js"></script>
+{{!-- <script>
+  const socket = io();
+  const main = ()=>{
+    socket.emit("nuevo mensaje",{message:"saludos desde el cliente"});
+  }  <script src="/socket.io/socket.io.js"></script> --}}
+  <script>
+    const socket = io();
+    socket.emit("nuevo mensaje", { message: "saludos desde el cliente" });
+  </script>
+</script>
+</div>  
