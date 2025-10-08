@@ -23,6 +23,7 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+
 app.engine("handlebars", handlebars.engine());
 app.use("/", viewsRouter);
 app.set("view engine", "handlebars");
@@ -30,14 +31,15 @@ app.set("views", path.join(process.cwd(), "src/views"));
 const httpServer = app.listen(8080, () => {
   console.log(`servidor en puerto 8080 `);
 });
+
 const socketServer = new Server(httpServer);
 
 socketServer.on("connection", (socket) => {
-  console.log(`usuario conectado: ${socket.id}`);
-  socket.emit("saludosDesdeBack", "Holanda");
-  socket.on("saludosDesdeFront", (message) => {
-    console.log(message);
-  });
+  // console.log(`usuario conectado: ${socket.id}`);
+  // socket.emit("saludosDesdeBack", "Holanda");
+  // socket.on("saludosDesdeFront", (message) => {
+  //   console.log(message);
+  // });
   socketServer.emit("arrayProducts", arrayProducts);
 
   socket.on("newProduct", (prod) => {
