@@ -19,9 +19,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/", express.static(path.join(process.cwd(), "src", "public")));
-app.get("/", (req, res) => {
-  res.render("home");
-});
 
 
 app.engine("handlebars", handlebars.engine());
